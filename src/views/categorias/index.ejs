@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/stylesheets/style.css">  
+
+</head>
+<body>
+    <h1>Catetorias</h1>
+       <a href="/categorias/create">Crear Categoria</a>
+    <table> 
+        </thead>
+            <tr>
+                
+                <th>Nombre</th>
+            </tr>
+         <thead>  
+        <tbody>
+            <%categorias.forEach(categoria=>{%>
+                <tr>
+                    <td><a href="/categorias/<%=categoria.id%>"><%= categoria.nombre %></a></td>
+                </tr>
+            <%})%>
+        <tbody>
+    <table>                
+</body>
+</html>
